@@ -20,7 +20,7 @@ git clone https://github.com/adityasurana3/flask-pdf-parser-app.git
 
 Now move to the directory
 ```bash
-cd flask-pdf-processing
+cd flask-pdf-parser
 ```
 
 To run the server run the docker-compose command

@@ -1,0 +1,7 @@
+Flask
+pdfplumber
+celery
+redis
+pytest
+Werkzeug
+pandas

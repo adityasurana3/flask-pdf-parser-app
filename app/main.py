@@ -6,7 +6,7 @@ import logging
 
 app = Flask(__name__)
 
-UPLOAD_FOLDER = 'uploads'
+UPLOAD_FOLDER = '/app/uploads'
 
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
@@ -33,11 +33,12 @@ def upload_file():
 @app.route('/status/<string:unique_id>', methods=['GET'])
 def check_status(unique_id):
     folder_path = os.path.join(UPLOAD_FOLDER, unique_id)
-
+    logging.info(folder_path)
     if not os.path.exists(folder_path):
         return jsonify({'error': 'Invalid unique ID'}), 404
 
     csv_path = os.path.join(folder_path, 'output.csv')
+    logging.info(csv_path)
     if os.path.exists(csv_path):
         return send_file(csv_path, as_attachment=True)
 

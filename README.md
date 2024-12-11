@@ -15,7 +15,7 @@ Before running this project, make sure you have the following installed:
 First, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/flask-pdf-processing.git
+git clone https://github.com/adityasurana3/flask-pdf-parser-app
 ```
 
 Now move to the directory

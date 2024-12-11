@@ -15,7 +15,6 @@ services:
       - "5000:5000"
     volumes:
       - ./uploads:/app/uploads
-      - ./logs:/app/logs
     environment:
       - FLASK_APP=app.main
       - FLASK_ENV=development
